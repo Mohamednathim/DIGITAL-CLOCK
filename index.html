@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer">
+            <div>
+                <span class="hour">07</span>
+            </div>
+            <span>:</span>
+            <div>
+                <span class="min">32</span>
+            </div>
+            <span>:</span>
+            <div>
+                <span class="sec">52</span>
+            </div>
+            <div class="ampm">
+                <span class="am active">AM</span>
+                <span class="pm">PM</span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<style>
+*{
+    font-size:xx-large;
+}
+.container{
+    display: flex;
+    height:90vh;
+    align-items: center;
+    justify-content:space-around;
+}
+.timer{
+    border: 5px solid red;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width:50vw;
+    border-radius: 25px;
+
+}
+.ampm{
+    width: 100px;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content:space-around;    
+    border-left: 5px solid red;
+}
+.am ,.pm{
+    width:100%;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.1);
+}
+.active{
+    color:rgba(0, 0, 0, 1);
+}
+</style>
+</html>
